@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,82 +10,82 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 15%;
+    --background: 0 0% 98%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 200 95% 45%;
+    --primary: 239 84% 67%;
     --primary-foreground: 0 0% 100%;
     
-    --primary-glow: 195 100% 65%;
+    --primary-glow: 238 56% 58%;
 
-    --secondary: 195 80% 55%;
+    --secondary: 231 48% 48%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted-foreground: 215 20% 55%;
 
-    --accent: 190 90% 50%;
+    --accent: 239 84% 67%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 200 95% 45%;
+    --input: 220 13% 91%;
+    --ring: 239 84% 67%;
 
     --radius: 0.75rem;
     
-    --ai-gradient: linear-gradient(135deg, hsl(200 95% 45%), hsl(195 100% 65%));
-    --user-gradient: linear-gradient(135deg, hsl(210 40% 96%), hsl(214 32% 91%));
-    --hero-gradient: linear-gradient(135deg, hsl(200 95% 45% / 0.1), hsl(195 100% 65% / 0.1));
+    --card-shadow: 0 4px 6px -1px hsl(220 13% 91% / 0.5), 0 2px 4px -1px hsl(220 13% 91% / 0.3);
+    --badge-bg: 239 84% 97%;
+    --badge-text: 239 84% 67%;
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --shadow-soft: 0 4px 20px -2px hsl(200 95% 45% / 0.15);
+    --shadow-soft: 0 10px 40px -10px hsl(239 84% 67% / 0.2);
   }
 
   .dark {
-    --background: 220 25% 10%;
+    --background: 222 47% 11%;
     --foreground: 210 40% 98%;
 
-    --card: 220 25% 12%;
+    --card: 224 71% 16%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 220 25% 12%;
+    --popover: 224 71% 16%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 195 100% 65%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 239 84% 67%;
+    --primary-foreground: 224 71% 16%;
     
-    --primary-glow: 200 95% 45%;
+    --primary-glow: 238 56% 58%;
 
-    --secondary: 200 95% 45%;
+    --secondary: 231 48% 48%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 18%;
+    --muted: 223 47% 20%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 195 100% 65%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 239 84% 67%;
+    --accent-foreground: 224 71% 16%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
-    --ring: 195 100% 65%;
+    --border: 223 47% 20%;
+    --input: 223 47% 20%;
+    --ring: 239 84% 67%;
     
-    --ai-gradient: linear-gradient(135deg, hsl(195 100% 65%), hsl(200 95% 45%));
-    --user-gradient: linear-gradient(135deg, hsl(220 20% 18%), hsl(220 25% 12%));
-    --hero-gradient: linear-gradient(135deg, hsl(195 100% 65% / 0.1), hsl(200 95% 45% / 0.1));
+    --card-shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -1px hsl(0 0% 0% / 0.2);
+    --badge-bg: 239 84% 25%;
+    --badge-text: 239 84% 85%;
     
-    --shadow-soft: 0 4px 20px -2px hsl(195 100% 65% / 0.2);
+    --shadow-soft: 0 10px 40px -10px hsl(239 84% 67% / 0.3);
   }
 }
 
@@ -94,6 +96,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
 
